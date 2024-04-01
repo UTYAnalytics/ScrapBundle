@@ -17,7 +17,8 @@ from datetime import datetime, timedelta
 import numpy as np
 from urllib.parse import urlparse
 import traceback
-
+from pyvirtualdisplay import Display
+import chromedriver_autoinstaller
 
 SUPABASE_URL = "https://sxoqzllwkjfluhskqlfl.supabase.co"
 SUPABASE_KEY = "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6InN4b3F6bGx3a2pmbHVoc2txbGZsIiwicm9sZSI6ImFub24iLCJpYXQiOjE3MDIyODE1MTcsImV4cCI6MjAxNzg1NzUxN30.FInynnvuqN8JeonrHa9pTXuQXMp9tE4LO0g5gj0adYE"
@@ -27,10 +28,10 @@ supabase: Client = create_client(SUPABASE_URL, SUPABASE_KEY)
 username = "forheliumonly@gmail.com"
 password = "qz6EvRm65L3HdjM2!!@#$"
 
-# display = Display(visible=0, size=(800, 800))
-# display.start()
+display = Display(visible=0, size=(800, 800))
+display.start()
 
-# chromedriver_autoinstaller.install()  # Check if the current version of chromedriver exists
+chromedriver_autoinstaller.install()  # Check if the current version of chromedriver exists
 
 with tempfile.TemporaryDirectory() as download_dir:
     # and if it doesn't exist, download it automatically,
