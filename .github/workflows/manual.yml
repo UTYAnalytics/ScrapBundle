@@ -30,6 +30,6 @@ jobs:
           sudo dpkg -i google-chrome-stable_current_amd64.deb
           sudo apt-get -f install
 
-      - name: Running the keepa_product_viewer script
+      - name: Running the reverse asin keyword helium script
         run: python helium10.py
   
