@@ -6,7 +6,7 @@ on:
     - cron: '0 */6 * * *'
 
 jobs:
-  keepa_product_viewer2:
+  helium_reverse_search_ASIN:
     runs-on: ubuntu-latest
     timeout-minutes: 600000
     steps:
