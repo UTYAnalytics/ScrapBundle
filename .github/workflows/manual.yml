@@ -2,8 +2,8 @@ name: Run Scrap Bundle On GitHub Action
 
 on:
   workflow_dispatch:
-  schedule:
-    - cron: '0 */6 * * *'
+  # schedule:
+  #   - cron: '0 */6 * * *'
 
 jobs:
   helium_reverse_search_ASIN:
